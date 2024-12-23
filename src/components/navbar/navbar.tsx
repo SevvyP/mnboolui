@@ -2,7 +2,7 @@
 
 import Racoon from '../../app/icon.png';
 import Image from 'next/image';
-import UserProfile from '../profile/profile';
+import UserProfile from '../userprofile/userprofile';
 
 export default function Navbar() {
 

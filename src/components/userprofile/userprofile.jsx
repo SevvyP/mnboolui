@@ -6,21 +6,9 @@ const UserProfile = () => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
     const { user, error, isLoading } = useUser();
-    useEffect(() => {
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, []);
 
     const toggleDropdown = () => {
         setIsOpen((prevState) => !prevState);
-    };
-
-    const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-            setIsOpen(false);
-        }
     };
 
     if (isLoading) return <div>Loading...</div>;
