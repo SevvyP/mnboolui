@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-You will need to set up authentication via Auth0. You can follow [this guide] (https://auth0.com/docs/quickstart/webapp/nextjs/01-login) to set up an application with the correct redirect and logout urls, and create a `.env.local` file with application secrets.
+You will need to set up authentication via Auth0. You can follow [this guide](https://auth0.com/docs/quickstart/webapp/nextjs/01-login) to set up an application with the correct redirect and logout urls, and create a `.env.local` file with application secrets.
 
 Then, run the development server:
 
