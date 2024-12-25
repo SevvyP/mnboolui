@@ -1,3 +1,5 @@
+'use client'
+
 // components/UserProfile.js
 import { useState, useEffect, useRef } from "react";
 import { useUser } from "@auth0/nextjs-auth0/client";
@@ -25,16 +27,16 @@ const UserProfile = () => {
             />
             <span>{user.name}</span>
             <div
-                className={`w-2.5 h-2.5 border-l-2 border-b-2 border-black transform transition-transform duration-300 ml-2 ${isOpen ? "rotate-45" : "-rotate-45"
+                className={`w-2.5 h-2.5 border-l-2 border-b-2 border-black dark:border-white transform transition-transform duration-300 ml-2 ${isOpen ? "rotate-45" : "-rotate-45"
                     }`}
             ></div>
 
             {isOpen && (
-                <div ref={dropdownRef} className="absolute top-full bottom-auto left-auto w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
-                    <div className="p-2 cursor-pointer hover:bg-gray-100" onClick={() => window.location.href = '/profile'}>
+                <div ref={dropdownRef} className="absolute top-full bottom-auto left-auto w-48 bg-white border border-gray-300 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
+                    <div className="p-2 cursor-pointer hover:bg-gray-100 hover:rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700" onClick={() => window.location.href = '/profile'}>
                         Profile Settings
                     </div>
-                    <div className="p-2 cursor-pointer hover:bg-gray-100" onClick={() => window.location.href = '/api/auth/logout'}>
+                    <div className="p-2 cursor-pointer hover:bg-gray-100 hover:rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700" onClick={() => window.location.href = '/api/auth/logout'}>
                         Logout
                     </div>
                 </div>
