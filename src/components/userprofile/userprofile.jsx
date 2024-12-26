@@ -33,7 +33,7 @@ const UserProfile = () => {
 
             {isOpen && (
                 <div ref={dropdownRef} className="absolute top-full bottom-auto left-auto w-48 bg-white border border-gray-300 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
-                    <div className="p-2 cursor-pointer hover:bg-gray-100 hover:rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700" onClick={() => window.location.href = '/profile'}>
+                    <div className="p-2 cursor-pointer hover:bg-gray-100 hover:rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700" onClick={() => window.location.href = '/settings#:~:text=Profile%20Settings'}>
                         Profile Settings
                     </div>
                     <div className="p-2 cursor-pointer hover:bg-gray-100 hover:rounded-lg dark:bg-gray-800 dark:hover:bg-gray-700" onClick={() => window.location.href = '/api/auth/logout'}>
