@@ -26,7 +26,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`flex-col w-64 shrink-0 bg-gray-50 dark:bg-gray-800 transform duration-300 ease-in-out ${
+      className={`flex-col fixed top-14 h-full w-64 shrink-0 bg-gray-50 dark:bg-gray-800 transform duration-300 ease-in-out ${
         isSidebarOpen ? "ml-0" : "-ml-64"
       }`}
     >

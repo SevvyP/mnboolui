@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 You will need to set up authentication via Auth0. You can follow [this guide](https://auth0.com/docs/quickstart/webapp/nextjs/01-login) to set up an application with the correct redirect and logout urls, and create a `.env.local` file with application secrets.
 
+You will need to add an `AUTH0_MANAGEMENT_TOKEN` variable to the `.env.local` with an [Auth0 access token](https://auth0.com/docs/secure/tokens/access-tokens/management-api-access-tokens/get-management-api-access-tokens-for-production) issued to an api with `read:users;read:users_app_metadata;read:user_idp_tokens` scopes
+
 Then, run the development server:
 
 ```bash

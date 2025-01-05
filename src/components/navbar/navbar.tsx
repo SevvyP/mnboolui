@@ -9,7 +9,7 @@ export default function Navbar() {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <div className="flex items-center h-14 w-full bg-white border-b bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+    <div className="flex items-center fixed z-50 h-14 w-full bg-white border-b bg-gray-50 border-gray-200 dark:bg-gray-800 dark:border-gray-700">
       <div
         className="ml-2 pointer-events-auto hover:bg-slate-200 dark:hover:bg-gray-700"
         onClick={toggleSidebar}
